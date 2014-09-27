@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>01</key>
+	<string>背景紫色.png</string>
+	<key>02</key>
+	<string>电池两格紫色.png</string>
+	<key>03</key>
+	<string>背景灰色小圆紫色.png</string>
+	<key>04</key>
+	<string>设置紫色.png</string>
+	<key>05</key>
+	<string>电池三格紫色.png</string>
+	<key>06</key>
+	<string>电池两格紫色.png</string>
+	<key>07</key>
+	<string>电池一格紫色.png</string>
+	<key>08</key>
+	<string></string>
+	<key>09</key>
+	<string>蓝牙灰紫色.png</string>
+	<key>10</key>
+	<string>On紫色.png</string>
+	<key>11</key>
+	<string>OFF灰紫色.png</string>
+	<key>12</key>
+	<string>Far紫色.png</string>
+	<key>13</key>
+	<string>Near紫色.png</string>
+</dict>
+</plist>

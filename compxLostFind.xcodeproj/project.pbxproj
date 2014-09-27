@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041DC4091915CB70002DD53A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041DC4081915CB70002DD53A /* MapViewController.m */; };
+		041DC40C1915CBAF002DD53A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041DC40B1915CBAF002DD53A /* CoreLocation.framework */; };
+		041DC40E1915CBBA002DD53A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041DC40D1915CBBA002DD53A /* MapKit.framework */; };
 		0421015819124059007D4402 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0421015719124059007D4402 /* Foundation.framework */; };
 		0421015A19124059007D4402 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0421015919124059007D4402 /* CoreGraphics.framework */; };
 		0421015C19124059007D4402 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0421015B19124059007D4402 /* UIKit.framework */; };
@@ -19,6 +22,159 @@
 		042101731912405A007D4402 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0421015B19124059007D4402 /* UIKit.framework */; };
 		0421017B1912405A007D4402 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 042101791912405A007D4402 /* InfoPlist.strings */; };
 		0421017D1912405A007D4402 /* compxLostFindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0421017C1912405A007D4402 /* compxLostFindTests.m */; };
+		0421018919124094007D4402 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0421018719124094007D4402 /* RootViewController.m */; };
+		0421018A19124094007D4402 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0421018819124094007D4402 /* RootViewController.xib */; };
+		0421D2AA194019300047B3C0 /* 拍照返回.png in Resources */ = {isa = PBXBuildFile; fileRef = 0421D2A1194019300047B3C0 /* 拍照返回.png */; };
+		0421D2AB194019300047B3C0 /* 拍照前.png in Resources */ = {isa = PBXBuildFile; fileRef = 0421D2A2194019300047B3C0 /* 拍照前.png */; };
+		0421D2AC194019300047B3C0 /* 拍照时.png in Resources */ = {isa = PBXBuildFile; fileRef = 0421D2A3194019300047B3C0 /* 拍照时.png */; };
+		0421D2B0194019300047B3C0 /* 摄像前@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0421D2A7194019300047B3C0 /* 摄像前@2x.png */; };
+		0421D2B1194019300047B3C0 /* 摄像时@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0421D2A8194019300047B3C0 /* 摄像时@2x.png */; };
+		0421D2B319401CA10047B3C0 /* 摄像图标.png in Resources */ = {isa = PBXBuildFile; fileRef = 0421D2B219401CA10047B3C0 /* 摄像图标.png */; };
+		0421D2B519401F1B0047B3C0 /* 蓝绿FAR@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0421D2B419401F1B0047B3C0 /* 蓝绿FAR@2x.png */; };
+		0421D2BA194041FF0047B3C0 /* 闪关灯开@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0421D2B6194041FF0047B3C0 /* 闪关灯开@2x.png */; };
+		0421D2BB194041FF0047B3C0 /* 闪关灯关@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0421D2B7194041FF0047B3C0 /* 闪关灯关@2x.png */; };
+		0421D2BD194041FF0047B3C0 /* 闪关灯自动@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0421D2B9194041FF0047B3C0 /* 闪关灯自动@2x.png */; };
+		0421D2C31940453F0047B3C0 /* 镜头切换@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0421D2C21940453F0047B3C0 /* 镜头切换@2x.png */; };
+		0421D2C519404B930047B3C0 /* 设置蓝绿.png in Resources */ = {isa = PBXBuildFile; fileRef = 0421D2C419404B930047B3C0 /* 设置蓝绿.png */; };
+		0421D2C919404D660047B3C0 /* 地图返回@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0421D2C819404D660047B3C0 /* 地图返回@2x.png */; };
+		0421D2D319407D260047B3C0 /* 电池红.png in Resources */ = {isa = PBXBuildFile; fileRef = 0421D2D219407D260047B3C0 /* 电池红.png */; };
+		04252A7D196A31CE006E4216 /* 蓝牙已连接紫色.png in Resources */ = {isa = PBXBuildFile; fileRef = 04252A7C196A31CE006E4216 /* 蓝牙已连接紫色.png */; };
+		04252A80196A32F9006E4216 /* 喇叭黑灰色.png in Resources */ = {isa = PBXBuildFile; fileRef = 04252A7E196A32F9006E4216 /* 喇叭黑灰色.png */; };
+		04252A81196A32F9006E4216 /* 音量条灰色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04252A7F196A32F9006E4216 /* 音量条灰色@2x.png */; };
+		04252A83196A34A0006E4216 /* 喇叭白色.png in Resources */ = {isa = PBXBuildFile; fileRef = 04252A82196A34A0006E4216 /* 喇叭白色.png */; };
+		04252A85196A3FA8006E4216 /* 梦莲湖.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04252A84196A3FA8006E4216 /* 梦莲湖.jpg */; };
+		04252A87196A5852006E4216 /* 喇叭深灰色.png in Resources */ = {isa = PBXBuildFile; fileRef = 04252A86196A5852006E4216 /* 喇叭深灰色.png */; };
+		04272057198A609F0035A77F /* 默认.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04272056198A609F0035A77F /* 默认.jpg */; };
+		0427205B198A647E0035A77F /* 默认图片.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0427205A198A647E0035A77F /* 默认图片.jpg */; };
+		042A5F9B19629ABC008D5F06 /* FindMusic.caf in Resources */ = {isa = PBXBuildFile; fileRef = 042A5F9A19629ABC008D5F06 /* FindMusic.caf */; };
+		042A5F9D1962A132008D5F06 /* FindLong.caf in Resources */ = {isa = PBXBuildFile; fileRef = 042A5F9C1962A132008D5F06 /* FindLong.caf */; };
+		04366B8919147EC400EDC63E /* 间隔条.png in Resources */ = {isa = PBXBuildFile; fileRef = 04366B8819147EC400EDC63E /* 间隔条.png */; };
+		04366B8D1914835500EDC63E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04366B8C1914835500EDC63E /* AssetsLibrary.framework */; };
+		04366B8F1914836300EDC63E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04366B8E1914836300EDC63E /* AVFoundation.framework */; };
+		043EEC8819D2D98F00E1AB42 /* LinkLossBack.caf in Resources */ = {isa = PBXBuildFile; fileRef = 043EEC8719D2D98F00E1AB42 /* LinkLossBack.caf */; };
+		0440EEA81918CFB600B283DD /* NetUnity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0440EEA71918CFB600B283DD /* NetUnity.m */; };
+		0440EEAB1918E97000B283DD /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0440EEAA1918E97000B283DD /* CoreBluetooth.framework */; };
+		04417DB719D3A0F500784557 /* newLinkLossBack.caf in Resources */ = {isa = PBXBuildFile; fileRef = 04417DB619D3A0F500784557 /* newLinkLossBack.caf */; };
+		044852FF1932F1F100A4E46C /* SevenSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 044852FE1932F1F100A4E46C /* SevenSwitch.m */; };
+		0448531F19335DDA00A4E46C /* Button27.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0448531E19335DDA00A4E46C /* Button27.wav */; };
+		044C57AB194EA0AA00CEE453 /* setImageOragne.plist in Resources */ = {isa = PBXBuildFile; fileRef = 044C57AA194EA0AA00CEE453 /* setImageOragne.plist */; };
+		044C57AD194EBD4600CEE453 /* setImageGreen.plist in Resources */ = {isa = PBXBuildFile; fileRef = 044C57AC194EBD4600CEE453 /* setImageGreen.plist */; };
+		044C57AF194EBD7E00CEE453 /* setImagePurple.plist in Resources */ = {isa = PBXBuildFile; fileRef = 044C57AE194EBD7D00CEE453 /* setImagePurple.plist */; };
+		044C57DB194EC1D500CEE453 /* 背景橙色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C57CC194EC1D500CEE453 /* 背景橙色.png */; };
+		044C57DC194EC1D500CEE453 /* 背景橙色按下.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C57CD194EC1D500CEE453 /* 背景橙色按下.png */; };
+		044C57DD194EC1D500CEE453 /* 背景灰色小圆橙色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C57CE194EC1D500CEE453 /* 背景灰色小圆橙色.png */; };
+		044C57DE194EC1D500CEE453 /* 电池两格橙色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C57CF194EC1D500CEE453 /* 电池两格橙色.png */; };
+		044C57DF194EC1D500CEE453 /* 电池三格橙色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C57D0194EC1D500CEE453 /* 电池三格橙色.png */; };
+		044C57E0194EC1D500CEE453 /* 电池一格橙色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C57D1194EC1D500CEE453 /* 电池一格橙色.png */; };
+		044C57E1194EC1D500CEE453 /* 定位橙色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C57D2194EC1D500CEE453 /* 定位橙色.png */; };
+		044C57E2194EC1D500CEE453 /* 喇叭橙色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C57D3194EC1D500CEE453 /* 喇叭橙色.png */; };
+		044C57E3194EC1D500CEE453 /* 蓝牙灰橙色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C57D4194EC1D500CEE453 /* 蓝牙灰橙色.png */; };
+		044C57E4194EC1D500CEE453 /* 蓝牙已连接橙色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C57D5194EC1D500CEE453 /* 蓝牙已连接橙色.png */; };
+		044C57E5194EC1D500CEE453 /* 设置橙色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C57D6194EC1D500CEE453 /* 设置橙色.png */; };
+		044C57E6194EC1D500CEE453 /* Far橙色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C57D7194EC1D500CEE453 /* Far橙色@2x.png */; };
+		044C57E7194EC1D500CEE453 /* Near橙色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C57D8194EC1D500CEE453 /* Near橙色@2x.png */; };
+		044C57E8194EC1D500CEE453 /* OFF灰橙色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C57D9194EC1D500CEE453 /* OFF灰橙色@2x.png */; };
+		044C57E9194EC1D500CEE453 /* On橙色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C57DA194EC1D500CEE453 /* On橙色@2x.png */; };
+		044C5813194EC27600CEE453 /* 背景灰色小圆绿色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5805194EC27600CEE453 /* 背景灰色小圆绿色.png */; };
+		044C5814194EC27600CEE453 /* 背景绿色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5806194EC27600CEE453 /* 背景绿色.png */; };
+		044C5815194EC27600CEE453 /* 背景绿色按下.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5807194EC27600CEE453 /* 背景绿色按下.png */; };
+		044C5816194EC27600CEE453 /* 电池两格绿色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5808194EC27600CEE453 /* 电池两格绿色.png */; };
+		044C5817194EC27600CEE453 /* 电池三格绿色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5809194EC27600CEE453 /* 电池三格绿色.png */; };
+		044C5818194EC27600CEE453 /* 电池一格绿色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C580A194EC27600CEE453 /* 电池一格绿色.png */; };
+		044C5819194EC27600CEE453 /* 喇叭绿色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C580B194EC27600CEE453 /* 喇叭绿色.png */; };
+		044C581A194EC27600CEE453 /* 蓝牙灰绿色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C580C194EC27600CEE453 /* 蓝牙灰绿色.png */; };
+		044C581B194EC27600CEE453 /* 蓝牙已连接绿色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C580D194EC27600CEE453 /* 蓝牙已连接绿色.png */; };
+		044C581C194EC27600CEE453 /* 设置绿色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C580E194EC27600CEE453 /* 设置绿色.png */; };
+		044C581D194EC27600CEE453 /* Far绿色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C580F194EC27600CEE453 /* Far绿色@2x.png */; };
+		044C581E194EC27600CEE453 /* Near绿色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5810194EC27600CEE453 /* Near绿色@2x.png */; };
+		044C581F194EC27600CEE453 /* OFF灰绿色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5811194EC27600CEE453 /* OFF灰绿色@2x.png */; };
+		044C5820194EC27600CEE453 /* On绿色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5812194EC27600CEE453 /* On绿色@2x.png */; };
+		044C5829194EC42E00CEE453 /* 橙色图标@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5823194EC42E00CEE453 /* 橙色图标@2x.png */; };
+		044C582A194EC42E00CEE453 /* 橙色图标按下@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5824194EC42E00CEE453 /* 橙色图标按下@2x.png */; };
+		044C582B194EC42E00CEE453 /* 绿色图标@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5825194EC42E00CEE453 /* 绿色图标@2x.png */; };
+		044C582C194EC42E00CEE453 /* 绿色图标按下@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5826194EC42E00CEE453 /* 绿色图标按下@2x.png */; };
+		044C582D194EC42E00CEE453 /* 紫色图标@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5827194EC42E00CEE453 /* 紫色图标@2x.png */; };
+		044C582E194EC42E00CEE453 /* 紫色图标按下@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5828194EC42E00CEE453 /* 紫色图标按下@2x.png */; };
+		044C5831194EF06500CEE453 /* setImageDefault.plist in Resources */ = {isa = PBXBuildFile; fileRef = 044C5830194EF06500CEE453 /* setImageDefault.plist */; };
+		044C583F194EF85E00CEE453 /* 背景灰色小圆紫色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5832194EF85E00CEE453 /* 背景灰色小圆紫色.png */; };
+		044C5840194EF85E00CEE453 /* 背景紫色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5833194EF85E00CEE453 /* 背景紫色.png */; };
+		044C5841194EF85E00CEE453 /* 背景紫色按下.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5834194EF85E00CEE453 /* 背景紫色按下.png */; };
+		044C5842194EF85E00CEE453 /* 电池两格紫色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5835194EF85E00CEE453 /* 电池两格紫色.png */; };
+		044C5843194EF85E00CEE453 /* 电池三格紫色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5836194EF85E00CEE453 /* 电池三格紫色.png */; };
+		044C5844194EF85E00CEE453 /* 电池一格紫色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5837194EF85E00CEE453 /* 电池一格紫色.png */; };
+		044C5845194EF85E00CEE453 /* 喇叭紫色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5838194EF85E00CEE453 /* 喇叭紫色.png */; };
+		044C5846194EF85E00CEE453 /* 蓝牙灰紫色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C5839194EF85E00CEE453 /* 蓝牙灰紫色.png */; };
+		044C5847194EF85E00CEE453 /* 设置紫色.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C583A194EF85E00CEE453 /* 设置紫色.png */; };
+		044C5848194EF85E00CEE453 /* Far紫色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C583B194EF85E00CEE453 /* Far紫色@2x.png */; };
+		044C5849194EF85E00CEE453 /* Near紫色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C583C194EF85E00CEE453 /* Near紫色@2x.png */; };
+		044C584A194EF85E00CEE453 /* OFF灰紫色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C583D194EF85E00CEE453 /* OFF灰紫色@2x.png */; };
+		044C584B194EF85E00CEE453 /* On紫色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044C583E194EF85E00CEE453 /* On紫色@2x.png */; };
+		0458EEFB196BBEEB00E8F797 /* 播放器播放@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0458EEF7196BBEEB00E8F797 /* 播放器播放@2x.png */; };
+		0458EEFC196BBEEB00E8F797 /* 播放器上一首@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0458EEF8196BBEEB00E8F797 /* 播放器上一首@2x.png */; };
+		0458EEFD196BBEEB00E8F797 /* 播放器下一首@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0458EEF9196BBEEB00E8F797 /* 播放器下一首@2x.png */; };
+		0458EEFE196BBEEB00E8F797 /* 播放器暂停@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0458EEFA196BBEEB00E8F797 /* 播放器暂停@2x.png */; };
+		0458EF00196BC0C200E8F797 /* 音量灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 0458EEFF196BC0C200E8F797 /* 音量灰.png */; };
+		0458EF02196BD1CA00E8F797 /* 播放器上一首按下@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0458EF01196BD1CA00E8F797 /* 播放器上一首按下@2x.png */; };
+		0458EF04196BD1CE00E8F797 /* 播放器下一首按下@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0458EF03196BD1CE00E8F797 /* 播放器下一首按下@2x.png */; };
+		045C55D6194A99A0007ECD90 /* 圆圈@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045C55D2194A99A0007ECD90 /* 圆圈@2x.png */; };
+		045C55D7194A99A0007ECD90 /* 喇叭蓝绿@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045C55D3194A99A0007ECD90 /* 喇叭蓝绿@2x.png */; };
+		045C55D8194A99A0007ECD90 /* 音量条灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045C55D4194A99A0007ECD90 /* 音量条灰@2x.png */; };
+		045C55D9194A99A0007ECD90 /* 音量条蓝@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045C55D5194A99A0007ECD90 /* 音量条蓝@2x.png */; };
+		046453DD19456A9000033CE3 /* backImageViewSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 046453DC19456A9000033CE3 /* backImageViewSelected.png */; };
+		046453DF19456A9C00033CE3 /* mapLoc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046453DE19456A9C00033CE3 /* mapLoc@2x.png */; };
+		046453E11945928E00033CE3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046453E01945928E00033CE3 /* CoreTelephony.framework */; };
+		046453E81945B97E00033CE3 /* 背景深灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 046453E61945B97E00033CE3 /* 背景深灰.png */; };
+		046453E91945B97E00033CE3 /* 背景外圈蓝绿.png in Resources */ = {isa = PBXBuildFile; fileRef = 046453E71945B97E00033CE3 /* 背景外圈蓝绿.png */; };
+		0464C953194FD9A6004CAB5B /* 蓝绿色图标@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0464C951194FD9A6004CAB5B /* 蓝绿色图标@2x.png */; };
+		0464C954194FD9A6004CAB5B /* 蓝绿色图标按下@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0464C952194FD9A6004CAB5B /* 蓝绿色图标按下@2x.png */; };
+		0464C956194FDEC8004CAB5B /* 音量条橙色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0464C955194FDEC8004CAB5B /* 音量条橙色@2x.png */; };
+		0464C958194FDF36004CAB5B /* 音量条绿色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0464C957194FDF36004CAB5B /* 音量条绿色@2x.png */; };
+		0464C95A194FDF7E004CAB5B /* 音量条紫色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0464C959194FDF7E004CAB5B /* 音量条紫色@2x.png */; };
+		0464C97F19503876004CAB5B /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0464C97E19503876004CAB5B /* MusicViewController.m */; };
+		046C6CF2193EC8B500ECFB46 /* 电池蓝绿2格.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6CE5193EC8B500ECFB46 /* 电池蓝绿2格.png */; };
+		046C6CF3193EC8B500ECFB46 /* 电池蓝绿1格.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6CE6193EC8B500ECFB46 /* 电池蓝绿1格.png */; };
+		046C6CF4193EC8B500ECFB46 /* 红色.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6CE7193EC8B500ECFB46 /* 红色.png */; };
+		046C6CF5193EC8B500ECFB46 /* 灰圆心.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6CE8193EC8B500ECFB46 /* 灰圆心.png */; };
+		046C6CF6193EC8B500ECFB46 /* 蓝色.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6CE9193EC8B500ECFB46 /* 蓝色.png */; };
+		046C6CF7193EC8B500ECFB46 /* 蓝牙灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6CEA193EC8B500ECFB46 /* 蓝牙灰.png */; };
+		046C6CF8193EC8B500ECFB46 /* 蓝牙蓝绿.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6CEB193EC8B500ECFB46 /* 蓝牙蓝绿.png */; };
+		046C6CF9193EC8B500ECFB46 /* 锁.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6CEC193EC8B500ECFB46 /* 锁.png */; };
+		046C6CFA193EC8B500ECFB46 /* 相册.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6CED193EC8B500ECFB46 /* 相册.png */; };
+		046C6CFB193EC8B500ECFB46 /* 相机.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6CEE193EC8B500ECFB46 /* 相机.png */; };
+		046C6CFC193EC8B500ECFB46 /* 音符.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6CEF193EC8B500ECFB46 /* 音符.png */; };
+		046C6CFD193EC8B500ECFB46 /* 圆心.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6CF0193EC8B500ECFB46 /* 圆心.png */; };
+		046C6CFE193EC8B500ECFB46 /* 圆心蓝绿.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6CF1193EC8B500ECFB46 /* 圆心蓝绿.png */; };
+		046C6D00193ECCC700ECFB46 /* 白色.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6CFF193ECCC700ECFB46 /* 白色.png */; };
+		046C6D02193ECF2300ECFB46 /* 摄像－白.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6D01193ECF2300ECFB46 /* 摄像－白.png */; };
+		046C6D04193ED32100ECFB46 /* 电池.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6D03193ED32100ECFB46 /* 电池.png */; };
+		046C6D06193EEDDB00ECFB46 /* 电池灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6D05193EEDDB00ECFB46 /* 电池灰.png */; };
+		046C6D08193EEE1000ECFB46 /* 电池蓝绿3格.png in Resources */ = {isa = PBXBuildFile; fileRef = 046C6D07193EEE1000ECFB46 /* 电池蓝绿3格.png */; };
+		046D92961942A54A00E0B439 /* 主动定位@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046D92951942A54A00E0B439 /* 主动定位@2x.png */; };
+		046DD8441941687900AE82CC /* 摄像黑圆圈@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046DD8431941687900AE82CC /* 摄像黑圆圈@2x.png */; };
+		04717C45192EDC0A00A26B0A /* BEEP2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04717C44192EDC0A00A26B0A /* BEEP2.wav */; };
+		04717C4A192F137D00A26B0A /* find.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04717C48192F137D00A26B0A /* find.wav */; };
+		04717C4B192F137D00A26B0A /* linkloss.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04717C49192F137D00A26B0A /* linkloss.wav */; };
+		04717C4F192F25BC00A26B0A /* find1s.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04717C4E192F25BC00A26B0A /* find1s.wav */; };
+		0474976719133B1300638598 /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474976519133B1300638598 /* SetViewController.m */; };
+		0474976819133B1300638598 /* SetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0474976619133B1300638598 /* SetViewController.xib */; };
+		047FE816192B379D00B1E25F /* alerm3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047FE815192B379D00B1E25F /* alerm3.wav */; };
+		048961FB194978CD0089EAB5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 048961FD194978CD0089EAB5 /* Localizable.strings */; };
+		049C0203193F0FCD00BC762E /* NEAR蓝绿条@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 049C0201193F0FCD00BC762E /* NEAR蓝绿条@2x.png */; };
+		049C0206193F14FB00BC762E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049C0205193F14FB00BC762E /* QuartzCore.framework */; };
+		049C020A193F154A00BC762E /* CustomSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 049C0208193F154A00BC762E /* CustomSwitch.m */; };
+		049C020B193F154A00BC762E /* CustomSwitch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049C0209193F154A00BC762E /* CustomSwitch.xib */; };
+		049C020D193F18A400BC762E /* FAR灰色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 049C020C193F18A400BC762E /* FAR灰色@2x.png */; };
+		049C021C193F25F400BC762E /* FAR灰色80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 049C021A193F25F400BC762E /* FAR灰色80@2x.png */; };
+		049C021D193F25F400BC762E /* NEAR蓝绿条80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 049C021B193F25F400BC762E /* NEAR蓝绿条80@2x.png */; };
+		049C0220193F269300BC762E /* OFF灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 049C021E193F269300BC762E /* OFF灰@2x.png */; };
+		049C0221193F269300BC762E /* ON蓝绿@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 049C021F193F269300BC762E /* ON蓝绿@2x.png */; };
+		049C0224193F371000BC762E /* FIND.png in Resources */ = {isa = PBXBuildFile; fileRef = 049C0222193F371000BC762E /* FIND.png */; };
+		049C0225193F371000BC762E /* SILENCE.png in Resources */ = {isa = PBXBuildFile; fileRef = 049C0223193F371000BC762E /* SILENCE.png */; };
+		049C0227193F3F1F00BC762E /* FindLK80.wav in Resources */ = {isa = PBXBuildFile; fileRef = 049C0226193F3F1F00BC762E /* FindLK80.wav */; };
+		049C0229193F3FB900BC762E /* LinkLossLK.wav in Resources */ = {isa = PBXBuildFile; fileRef = 049C0228193F3FB900BC762E /* LinkLossLK.wav */; };
+		04A30690192DF7A1006347E9 /* BLEController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A3068F192DF7A1006347E9 /* BLEController.m */; };
+		04D3B8961929E16100449BA8 /* WGS84TOGCJ02.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3B8951929E16100449BA8 /* WGS84TOGCJ02.m */; };
+		04E6686B1946EF08003E077B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E6686A1946EF08003E077B /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +188,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041DC4071915CB70002DD53A /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		041DC4081915CB70002DD53A /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		041DC40B1915CBAF002DD53A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		041DC40D1915CBBA002DD53A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0421015419124059007D4402 /* compxLostFind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = compxLostFind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0421015719124059007D4402 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0421015919124059007D4402 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +208,170 @@
 		042101781912405A007D4402 /* compxLostFindTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "compxLostFindTests-Info.plist"; sourceTree = "<group>"; };
 		0421017A1912405A007D4402 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0421017C1912405A007D4402 /* compxLostFindTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = compxLostFindTests.m; sourceTree = "<group>"; };
+		0421018619124094007D4402 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = ../RootViewController.h; sourceTree = "<group>"; };
+		0421018719124094007D4402 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = ../RootViewController.m; sourceTree = "<group>"; };
+		0421018819124094007D4402 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootViewController.xib; path = ../RootViewController.xib; sourceTree = "<group>"; };
+		0421D2A1194019300047B3C0 /* 拍照返回.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "拍照返回.png"; sourceTree = "<group>"; };
+		0421D2A2194019300047B3C0 /* 拍照前.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "拍照前.png"; sourceTree = "<group>"; };
+		0421D2A3194019300047B3C0 /* 拍照时.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "拍照时.png"; sourceTree = "<group>"; };
+		0421D2A7194019300047B3C0 /* 摄像前@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "摄像前@2x.png"; sourceTree = "<group>"; };
+		0421D2A8194019300047B3C0 /* 摄像时@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "摄像时@2x.png"; sourceTree = "<group>"; };
+		0421D2B219401CA10047B3C0 /* 摄像图标.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "摄像图标.png"; sourceTree = "<group>"; };
+		0421D2B419401F1B0047B3C0 /* 蓝绿FAR@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蓝绿FAR@2x.png"; sourceTree = "<group>"; };
+		0421D2B6194041FF0047B3C0 /* 闪关灯开@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "闪关灯开@2x.png"; sourceTree = "<group>"; };
+		0421D2B7194041FF0047B3C0 /* 闪关灯关@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "闪关灯关@2x.png"; sourceTree = "<group>"; };
+		0421D2B9194041FF0047B3C0 /* 闪关灯自动@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "闪关灯自动@2x.png"; sourceTree = "<group>"; };
+		0421D2C21940453F0047B3C0 /* 镜头切换@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "镜头切换@2x.png"; sourceTree = "<group>"; };
+		0421D2C419404B930047B3C0 /* 设置蓝绿.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置蓝绿.png"; sourceTree = "<group>"; };
+		0421D2C819404D660047B3C0 /* 地图返回@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地图返回@2x.png"; sourceTree = "<group>"; };
+		0421D2D219407D260047B3C0 /* 电池红.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电池红.png"; sourceTree = "<group>"; };
+		04252A7C196A31CE006E4216 /* 蓝牙已连接紫色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "蓝牙已连接紫色.png"; path = "紫色图标/蓝牙已连接紫色.png"; sourceTree = "<group>"; };
+		04252A7E196A32F9006E4216 /* 喇叭黑灰色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "喇叭黑灰色.png"; sourceTree = "<group>"; };
+		04252A7F196A32F9006E4216 /* 音量条灰色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "音量条灰色@2x.png"; sourceTree = "<group>"; };
+		04252A82196A34A0006E4216 /* 喇叭白色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "喇叭白色.png"; sourceTree = "<group>"; };
+		04252A84196A3FA8006E4216 /* 梦莲湖.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "梦莲湖.jpg"; sourceTree = "<group>"; };
+		04252A86196A5852006E4216 /* 喇叭深灰色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "喇叭深灰色.png"; sourceTree = "<group>"; };
+		04272056198A609F0035A77F /* 默认.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "默认.jpg"; sourceTree = "<group>"; };
+		0427205A198A647E0035A77F /* 默认图片.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "默认图片.jpg"; sourceTree = "<group>"; };
+		042A5F9A19629ABC008D5F06 /* FindMusic.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FindMusic.caf; sourceTree = "<group>"; };
+		042A5F9C1962A132008D5F06 /* FindLong.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FindLong.caf; sourceTree = "<group>"; };
+		04366B8819147EC400EDC63E /* 间隔条.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "间隔条.png"; sourceTree = "<group>"; };
+		04366B8C1914835500EDC63E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		04366B8E1914836300EDC63E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		043EEC8719D2D98F00E1AB42 /* LinkLossBack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LinkLossBack.caf; sourceTree = "<group>"; };
+		0440EEA61918CFB600B283DD /* NetUnity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetUnity.h; sourceTree = "<group>"; };
+		0440EEA71918CFB600B283DD /* NetUnity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetUnity.m; sourceTree = "<group>"; };
+		0440EEAA1918E97000B283DD /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		04417DB619D3A0F500784557 /* newLinkLossBack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = newLinkLossBack.caf; sourceTree = "<group>"; };
+		044852FD1932F1F100A4E46C /* SevenSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SevenSwitch.h; sourceTree = "<group>"; };
+		044852FE1932F1F100A4E46C /* SevenSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SevenSwitch.m; sourceTree = "<group>"; };
+		0448531E19335DDA00A4E46C /* Button27.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Button27.wav; sourceTree = "<group>"; };
+		044C57AA194EA0AA00CEE453 /* setImageOragne.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = setImageOragne.plist; path = ../setImageOragne.plist; sourceTree = "<group>"; };
+		044C57AC194EBD4600CEE453 /* setImageGreen.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = setImageGreen.plist; path = ../setImageGreen.plist; sourceTree = "<group>"; };
+		044C57AE194EBD7D00CEE453 /* setImagePurple.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = setImagePurple.plist; path = ../setImagePurple.plist; sourceTree = "<group>"; };
+		044C57CC194EC1D500CEE453 /* 背景橙色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "背景橙色.png"; path = "橙色图标/背景橙色.png"; sourceTree = "<group>"; };
+		044C57CD194EC1D500CEE453 /* 背景橙色按下.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "背景橙色按下.png"; path = "橙色图标/背景橙色按下.png"; sourceTree = "<group>"; };
+		044C57CE194EC1D500CEE453 /* 背景灰色小圆橙色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "背景灰色小圆橙色.png"; path = "橙色图标/背景灰色小圆橙色.png"; sourceTree = "<group>"; };
+		044C57CF194EC1D500CEE453 /* 电池两格橙色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "电池两格橙色.png"; path = "橙色图标/电池两格橙色.png"; sourceTree = "<group>"; };
+		044C57D0194EC1D500CEE453 /* 电池三格橙色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "电池三格橙色.png"; path = "橙色图标/电池三格橙色.png"; sourceTree = "<group>"; };
+		044C57D1194EC1D500CEE453 /* 电池一格橙色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "电池一格橙色.png"; path = "橙色图标/电池一格橙色.png"; sourceTree = "<group>"; };
+		044C57D2194EC1D500CEE453 /* 定位橙色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "定位橙色.png"; path = "橙色图标/定位橙色.png"; sourceTree = "<group>"; };
+		044C57D3194EC1D500CEE453 /* 喇叭橙色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "喇叭橙色.png"; path = "橙色图标/喇叭橙色.png"; sourceTree = "<group>"; };
+		044C57D4194EC1D500CEE453 /* 蓝牙灰橙色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "蓝牙灰橙色.png"; path = "橙色图标/蓝牙灰橙色.png"; sourceTree = "<group>"; };
+		044C57D5194EC1D500CEE453 /* 蓝牙已连接橙色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "蓝牙已连接橙色.png"; path = "橙色图标/蓝牙已连接橙色.png"; sourceTree = "<group>"; };
+		044C57D6194EC1D500CEE453 /* 设置橙色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "设置橙色.png"; path = "橙色图标/设置橙色.png"; sourceTree = "<group>"; };
+		044C57D7194EC1D500CEE453 /* Far橙色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Far橙色@2x.png"; path = "橙色图标/Far橙色@2x.png"; sourceTree = "<group>"; };
+		044C57D8194EC1D500CEE453 /* Near橙色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Near橙色@2x.png"; path = "橙色图标/Near橙色@2x.png"; sourceTree = "<group>"; };
+		044C57D9194EC1D500CEE453 /* OFF灰橙色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OFF灰橙色@2x.png"; path = "橙色图标/OFF灰橙色@2x.png"; sourceTree = "<group>"; };
+		044C57DA194EC1D500CEE453 /* On橙色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "On橙色@2x.png"; path = "橙色图标/On橙色@2x.png"; sourceTree = "<group>"; };
+		044C5805194EC27600CEE453 /* 背景灰色小圆绿色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "背景灰色小圆绿色.png"; path = "绿色图标/背景灰色小圆绿色.png"; sourceTree = "<group>"; };
+		044C5806194EC27600CEE453 /* 背景绿色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "背景绿色.png"; path = "绿色图标/背景绿色.png"; sourceTree = "<group>"; };
+		044C5807194EC27600CEE453 /* 背景绿色按下.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "背景绿色按下.png"; path = "绿色图标/背景绿色按下.png"; sourceTree = "<group>"; };
+		044C5808194EC27600CEE453 /* 电池两格绿色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "电池两格绿色.png"; path = "绿色图标/电池两格绿色.png"; sourceTree = "<group>"; };
+		044C5809194EC27600CEE453 /* 电池三格绿色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "电池三格绿色.png"; path = "绿色图标/电池三格绿色.png"; sourceTree = "<group>"; };
+		044C580A194EC27600CEE453 /* 电池一格绿色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "电池一格绿色.png"; path = "绿色图标/电池一格绿色.png"; sourceTree = "<group>"; };
+		044C580B194EC27600CEE453 /* 喇叭绿色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "喇叭绿色.png"; path = "绿色图标/喇叭绿色.png"; sourceTree = "<group>"; };
+		044C580C194EC27600CEE453 /* 蓝牙灰绿色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "蓝牙灰绿色.png"; path = "绿色图标/蓝牙灰绿色.png"; sourceTree = "<group>"; };
+		044C580D194EC27600CEE453 /* 蓝牙已连接绿色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "蓝牙已连接绿色.png"; path = "绿色图标/蓝牙已连接绿色.png"; sourceTree = "<group>"; };
+		044C580E194EC27600CEE453 /* 设置绿色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "设置绿色.png"; path = "绿色图标/设置绿色.png"; sourceTree = "<group>"; };
+		044C580F194EC27600CEE453 /* Far绿色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Far绿色@2x.png"; path = "绿色图标/Far绿色@2x.png"; sourceTree = "<group>"; };
+		044C5810194EC27600CEE453 /* Near绿色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Near绿色@2x.png"; path = "绿色图标/Near绿色@2x.png"; sourceTree = "<group>"; };
+		044C5811194EC27600CEE453 /* OFF灰绿色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OFF灰绿色@2x.png"; path = "绿色图标/OFF灰绿色@2x.png"; sourceTree = "<group>"; };
+		044C5812194EC27600CEE453 /* On绿色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "On绿色@2x.png"; path = "绿色图标/On绿色@2x.png"; sourceTree = "<group>"; };
+		044C5823194EC42E00CEE453 /* 橙色图标@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "橙色图标@2x.png"; path = "切换背景的四个图标/橙色图标@2x.png"; sourceTree = "<group>"; };
+		044C5824194EC42E00CEE453 /* 橙色图标按下@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "橙色图标按下@2x.png"; path = "切换背景的四个图标/橙色图标按下@2x.png"; sourceTree = "<group>"; };
+		044C5825194EC42E00CEE453 /* 绿色图标@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "绿色图标@2x.png"; path = "切换背景的四个图标/绿色图标@2x.png"; sourceTree = "<group>"; };
+		044C5826194EC42E00CEE453 /* 绿色图标按下@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "绿色图标按下@2x.png"; path = "切换背景的四个图标/绿色图标按下@2x.png"; sourceTree = "<group>"; };
+		044C5827194EC42E00CEE453 /* 紫色图标@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "紫色图标@2x.png"; path = "切换背景的四个图标/紫色图标@2x.png"; sourceTree = "<group>"; };
+		044C5828194EC42E00CEE453 /* 紫色图标按下@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "紫色图标按下@2x.png"; path = "切换背景的四个图标/紫色图标按下@2x.png"; sourceTree = "<group>"; };
+		044C5830194EF06500CEE453 /* setImageDefault.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = setImageDefault.plist; path = ../setImageDefault.plist; sourceTree = "<group>"; };
+		044C5832194EF85E00CEE453 /* 背景灰色小圆紫色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "背景灰色小圆紫色.png"; path = "紫色图标/背景灰色小圆紫色.png"; sourceTree = "<group>"; };
+		044C5833194EF85E00CEE453 /* 背景紫色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "背景紫色.png"; path = "紫色图标/背景紫色.png"; sourceTree = "<group>"; };
+		044C5834194EF85E00CEE453 /* 背景紫色按下.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "背景紫色按下.png"; path = "紫色图标/背景紫色按下.png"; sourceTree = "<group>"; };
+		044C5835194EF85E00CEE453 /* 电池两格紫色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "电池两格紫色.png"; path = "紫色图标/电池两格紫色.png"; sourceTree = "<group>"; };
+		044C5836194EF85E00CEE453 /* 电池三格紫色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "电池三格紫色.png"; path = "紫色图标/电池三格紫色.png"; sourceTree = "<group>"; };
+		044C5837194EF85E00CEE453 /* 电池一格紫色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "电池一格紫色.png"; path = "紫色图标/电池一格紫色.png"; sourceTree = "<group>"; };
+		044C5838194EF85E00CEE453 /* 喇叭紫色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "喇叭紫色.png"; path = "紫色图标/喇叭紫色.png"; sourceTree = "<group>"; };
+		044C5839194EF85E00CEE453 /* 蓝牙灰紫色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "蓝牙灰紫色.png"; path = "紫色图标/蓝牙灰紫色.png"; sourceTree = "<group>"; };
+		044C583A194EF85E00CEE453 /* 设置紫色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "设置紫色.png"; path = "紫色图标/设置紫色.png"; sourceTree = "<group>"; };
+		044C583B194EF85E00CEE453 /* Far紫色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Far紫色@2x.png"; path = "紫色图标/Far紫色@2x.png"; sourceTree = "<group>"; };
+		044C583C194EF85E00CEE453 /* Near紫色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Near紫色@2x.png"; path = "紫色图标/Near紫色@2x.png"; sourceTree = "<group>"; };
+		044C583D194EF85E00CEE453 /* OFF灰紫色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OFF灰紫色@2x.png"; path = "紫色图标/OFF灰紫色@2x.png"; sourceTree = "<group>"; };
+		044C583E194EF85E00CEE453 /* On紫色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "On紫色@2x.png"; path = "紫色图标/On紫色@2x.png"; sourceTree = "<group>"; };
+		0458EEF7196BBEEB00E8F797 /* 播放器播放@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "播放器播放@2x.png"; sourceTree = "<group>"; };
+		0458EEF8196BBEEB00E8F797 /* 播放器上一首@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "播放器上一首@2x.png"; sourceTree = "<group>"; };
+		0458EEF9196BBEEB00E8F797 /* 播放器下一首@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "播放器下一首@2x.png"; sourceTree = "<group>"; };
+		0458EEFA196BBEEB00E8F797 /* 播放器暂停@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "播放器暂停@2x.png"; sourceTree = "<group>"; };
+		0458EEFF196BC0C200E8F797 /* 音量灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "音量灰.png"; sourceTree = "<group>"; };
+		0458EF01196BD1CA00E8F797 /* 播放器上一首按下@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "播放器上一首按下@2x.png"; sourceTree = "<group>"; };
+		0458EF03196BD1CE00E8F797 /* 播放器下一首按下@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "播放器下一首按下@2x.png"; sourceTree = "<group>"; };
+		045C55D2194A99A0007ECD90 /* 圆圈@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "圆圈@2x.png"; sourceTree = "<group>"; };
+		045C55D3194A99A0007ECD90 /* 喇叭蓝绿@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "喇叭蓝绿@2x.png"; sourceTree = "<group>"; };
+		045C55D4194A99A0007ECD90 /* 音量条灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "音量条灰@2x.png"; sourceTree = "<group>"; };
+		045C55D5194A99A0007ECD90 /* 音量条蓝@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "音量条蓝@2x.png"; sourceTree = "<group>"; };
+		046453DC19456A9000033CE3 /* backImageViewSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backImageViewSelected.png; sourceTree = "<group>"; };
+		046453DE19456A9C00033CE3 /* mapLoc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapLoc@2x.png"; sourceTree = "<group>"; };
+		046453E01945928E00033CE3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		046453E61945B97E00033CE3 /* 背景深灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景深灰.png"; sourceTree = "<group>"; };
+		046453E71945B97E00033CE3 /* 背景外圈蓝绿.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景外圈蓝绿.png"; sourceTree = "<group>"; };
+		0464C951194FD9A6004CAB5B /* 蓝绿色图标@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "蓝绿色图标@2x.png"; path = "切换背景的四个图标/蓝绿色图标@2x.png"; sourceTree = "<group>"; };
+		0464C952194FD9A6004CAB5B /* 蓝绿色图标按下@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "蓝绿色图标按下@2x.png"; path = "切换背景的四个图标/蓝绿色图标按下@2x.png"; sourceTree = "<group>"; };
+		0464C955194FDEC8004CAB5B /* 音量条橙色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "音量条橙色@2x.png"; path = "橙色图标/音量条橙色@2x.png"; sourceTree = "<group>"; };
+		0464C957194FDF36004CAB5B /* 音量条绿色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "音量条绿色@2x.png"; path = "绿色图标/音量条绿色@2x.png"; sourceTree = "<group>"; };
+		0464C959194FDF7E004CAB5B /* 音量条紫色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "音量条紫色@2x.png"; path = "紫色图标/音量条紫色@2x.png"; sourceTree = "<group>"; };
+		0464C97D19503876004CAB5B /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
+		0464C97E19503876004CAB5B /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		046C6CE5193EC8B500ECFB46 /* 电池蓝绿2格.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电池蓝绿2格.png"; sourceTree = "<group>"; };
+		046C6CE6193EC8B500ECFB46 /* 电池蓝绿1格.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电池蓝绿1格.png"; sourceTree = "<group>"; };
+		046C6CE7193EC8B500ECFB46 /* 红色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "红色.png"; sourceTree = "<group>"; };
+		046C6CE8193EC8B500ECFB46 /* 灰圆心.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灰圆心.png"; sourceTree = "<group>"; };
+		046C6CE9193EC8B500ECFB46 /* 蓝色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蓝色.png"; sourceTree = "<group>"; };
+		046C6CEA193EC8B500ECFB46 /* 蓝牙灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蓝牙灰.png"; sourceTree = "<group>"; };
+		046C6CEB193EC8B500ECFB46 /* 蓝牙蓝绿.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蓝牙蓝绿.png"; sourceTree = "<group>"; };
+		046C6CEC193EC8B500ECFB46 /* 锁.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "锁.png"; sourceTree = "<group>"; };
+		046C6CED193EC8B500ECFB46 /* 相册.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "相册.png"; sourceTree = "<group>"; };
+		046C6CEE193EC8B500ECFB46 /* 相机.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "相机.png"; sourceTree = "<group>"; };
+		046C6CEF193EC8B500ECFB46 /* 音符.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "音符.png"; sourceTree = "<group>"; };
+		046C6CF0193EC8B500ECFB46 /* 圆心.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "圆心.png"; sourceTree = "<group>"; };
+		046C6CF1193EC8B500ECFB46 /* 圆心蓝绿.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "圆心蓝绿.png"; sourceTree = "<group>"; };
+		046C6CFF193ECCC700ECFB46 /* 白色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "白色.png"; sourceTree = "<group>"; };
+		046C6D01193ECF2300ECFB46 /* 摄像－白.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "摄像－白.png"; sourceTree = "<group>"; };
+		046C6D03193ED32100ECFB46 /* 电池.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电池.png"; sourceTree = "<group>"; };
+		046C6D05193EEDDB00ECFB46 /* 电池灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电池灰.png"; sourceTree = "<group>"; };
+		046C6D07193EEE1000ECFB46 /* 电池蓝绿3格.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电池蓝绿3格.png"; sourceTree = "<group>"; };
+		046D92951942A54A00E0B439 /* 主动定位@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主动定位@2x.png"; sourceTree = "<group>"; };
+		046DD8431941687900AE82CC /* 摄像黑圆圈@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "摄像黑圆圈@2x.png"; sourceTree = "<group>"; };
+		04717C44192EDC0A00A26B0A /* BEEP2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BEEP2.wav; sourceTree = "<group>"; };
+		04717C48192F137D00A26B0A /* find.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = find.wav; sourceTree = "<group>"; };
+		04717C49192F137D00A26B0A /* linkloss.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = linkloss.wav; sourceTree = "<group>"; };
+		04717C4E192F25BC00A26B0A /* find1s.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = find1s.wav; sourceTree = "<group>"; };
+		0474976419133B1300638598 /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
+		0474976519133B1300638598 /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
+		0474976619133B1300638598 /* SetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetViewController.xib; sourceTree = "<group>"; };
+		047FE815192B379D00B1E25F /* alerm3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alerm3.wav; sourceTree = "<group>"; };
+		048961FC194978CD0089EAB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		048961FE194978EC0089EAB5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		048961FF194978EC0089EAB5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		04896200194978EC0089EAB5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		049C0201193F0FCD00BC762E /* NEAR蓝绿条@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NEAR蓝绿条@2x.png"; sourceTree = "<group>"; };
+		049C0205193F14FB00BC762E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		049C0207193F154A00BC762E /* CustomSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSwitch.h; sourceTree = "<group>"; };
+		049C0208193F154A00BC762E /* CustomSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSwitch.m; sourceTree = "<group>"; };
+		049C0209193F154A00BC762E /* CustomSwitch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSwitch.xib; sourceTree = "<group>"; };
+		049C020C193F18A400BC762E /* FAR灰色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FAR灰色@2x.png"; sourceTree = "<group>"; };
+		049C021A193F25F400BC762E /* FAR灰色80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FAR灰色80@2x.png"; sourceTree = "<group>"; };
+		049C021B193F25F400BC762E /* NEAR蓝绿条80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NEAR蓝绿条80@2x.png"; sourceTree = "<group>"; };
+		049C021E193F269300BC762E /* OFF灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OFF灰@2x.png"; sourceTree = "<group>"; };
+		049C021F193F269300BC762E /* ON蓝绿@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ON蓝绿@2x.png"; sourceTree = "<group>"; };
+		049C0222193F371000BC762E /* FIND.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FIND.png; sourceTree = "<group>"; };
+		049C0223193F371000BC762E /* SILENCE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SILENCE.png; sourceTree = "<group>"; };
+		049C0226193F3F1F00BC762E /* FindLK80.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = FindLK80.wav; sourceTree = "<group>"; };
+		049C0228193F3FB900BC762E /* LinkLossLK.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = LinkLossLK.wav; sourceTree = "<group>"; };
+		04A3068E192DF7A1006347E9 /* BLEController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEController.h; sourceTree = "<group>"; };
+		04A3068F192DF7A1006347E9 /* BLEController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEController.m; sourceTree = "<group>"; };
+		04D3B8941929E16100449BA8 /* WGS84TOGCJ02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGS84TOGCJ02.h; sourceTree = "<group>"; };
+		04D3B8951929E16100449BA8 /* WGS84TOGCJ02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGS84TOGCJ02.m; sourceTree = "<group>"; };
+		04E6686A1946EF08003E077B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +379,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046453E11945928E00033CE3 /* CoreTelephony.framework in Frameworks */,
+				049C0206193F14FB00BC762E /* QuartzCore.framework in Frameworks */,
+				0440EEAB1918E97000B283DD /* CoreBluetooth.framework in Frameworks */,
+				041DC40E1915CBBA002DD53A /* MapKit.framework in Frameworks */,
+				041DC40C1915CBAF002DD53A /* CoreLocation.framework in Frameworks */,
+				04366B8F1914836300EDC63E /* AVFoundation.framework in Frameworks */,
+				04366B8D1914835500EDC63E /* AssetsLibrary.framework in Frameworks */,
 				0421015A19124059007D4402 /* CoreGraphics.framework in Frameworks */,
 				0421015C19124059007D4402 /* UIKit.framework in Frameworks */,
 				0421015819124059007D4402 /* Foundation.framework in Frameworks */,
@@ -74,9 +405,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041DC40A1915CB76002DD53A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				041DC4071915CB70002DD53A /* MapViewController.h */,
+				041DC4081915CB70002DD53A /* MapViewController.m */,
+				0474976419133B1300638598 /* SetViewController.h */,
+				0474976519133B1300638598 /* SetViewController.m */,
+				0474976619133B1300638598 /* SetViewController.xib */,
+				0421018619124094007D4402 /* RootViewController.h */,
+				0421018719124094007D4402 /* RootViewController.m */,
+				0421018819124094007D4402 /* RootViewController.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		0421014B19124059007D4402 = {
 			isa = PBXGroup;
 			children = (
+				048961FD194978CD0089EAB5 /* Localizable.strings */,
+				046C6CE4193EC87E00ECFB46 /* imageNew */,
 				0421015D1912405A007D4402 /* compxLostFind */,
 				042101761912405A007D4402 /* compxLostFindTests */,
 				0421015619124059007D4402 /* Frameworks */,
@@ -96,6 +444,13 @@
 		0421015619124059007D4402 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				046453E01945928E00033CE3 /* CoreTelephony.framework */,
+				049C0205193F14FB00BC762E /* QuartzCore.framework */,
+				0440EEAA1918E97000B283DD /* CoreBluetooth.framework */,
+				041DC40D1915CBBA002DD53A /* MapKit.framework */,
+				041DC40B1915CBAF002DD53A /* CoreLocation.framework */,
+				04366B8E1914836300EDC63E /* AVFoundation.framework */,
+				04366B8C1914835500EDC63E /* AssetsLibrary.framework */,
 				0421015719124059007D4402 /* Foundation.framework */,
 				0421015919124059007D4402 /* CoreGraphics.framework */,
 				0421015B19124059007D4402 /* UIKit.framework */,
@@ -107,6 +462,13 @@
 		0421015D1912405A007D4402 /* compxLostFind */ = {
 			isa = PBXGroup;
 			children = (
+				0464C97C19503833004CAB5B /* Music */,
+				044852FC1932F1DA00A4E46C /* Switch */,
+				04D3B8931929E12800449BA8 /* Map */,
+				043F6E591919DA7300B2F8E6 /* Net */,
+				0440EEA91918E8FE00B283DD /* Ble */,
+				041DC40A1915CB76002DD53A /* ViewController */,
+				0421018B1912411B007D4402 /* volume */,
 				042101661912405A007D4402 /* AppDelegate.h */,
 				042101671912405A007D4402 /* AppDelegate.m */,
 				042101691912405A007D4402 /* Images.xcassets */,
@@ -118,6 +480,11 @@
 		0421015E1912405A007D4402 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				044C5830194EF06500CEE453 /* setImageDefault.plist */,
+				044C57AE194EBD7D00CEE453 /* setImagePurple.plist */,
+				044C57AC194EBD4600CEE453 /* setImageGreen.plist */,
+				044C57AA194EA0AA00CEE453 /* setImageOragne.plist */,
+				04E6686A1946EF08003E077B /* Icon.png */,
 				0421015F1912405A007D4402 /* compxLostFind-Info.plist */,
 				042101601912405A007D4402 /* InfoPlist.strings */,
 				042101631912405A007D4402 /* main.m */,
@@ -142,6 +509,239 @@
 				042101791912405A007D4402 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0421018B1912411B007D4402 /* volume */ = {
+			isa = PBXGroup;
+			children = (
+				042A5F9C1962A132008D5F06 /* FindLong.caf */,
+				042A5F9A19629ABC008D5F06 /* FindMusic.caf */,
+				043EEC8719D2D98F00E1AB42 /* LinkLossBack.caf */,
+				04417DB619D3A0F500784557 /* newLinkLossBack.caf */,
+				049C0228193F3FB900BC762E /* LinkLossLK.wav */,
+				049C0226193F3F1F00BC762E /* FindLK80.wav */,
+				0448531E19335DDA00A4E46C /* Button27.wav */,
+				04717C4E192F25BC00A26B0A /* find1s.wav */,
+				04717C48192F137D00A26B0A /* find.wav */,
+				04717C49192F137D00A26B0A /* linkloss.wav */,
+				04717C44192EDC0A00A26B0A /* BEEP2.wav */,
+				047FE815192B379D00B1E25F /* alerm3.wav */,
+				04366B8819147EC400EDC63E /* 间隔条.png */,
+			);
+			name = volume;
+			sourceTree = "<group>";
+		};
+		043F6E591919DA7300B2F8E6 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				0440EEA61918CFB600B283DD /* NetUnity.h */,
+				0440EEA71918CFB600B283DD /* NetUnity.m */,
+			);
+			name = Net;
+			sourceTree = "<group>";
+		};
+		0440EEA91918E8FE00B283DD /* Ble */ = {
+			isa = PBXGroup;
+			children = (
+				04A3068E192DF7A1006347E9 /* BLEController.h */,
+				04A3068F192DF7A1006347E9 /* BLEController.m */,
+			);
+			name = Ble;
+			sourceTree = "<group>";
+		};
+		044852FC1932F1DA00A4E46C /* Switch */ = {
+			isa = PBXGroup;
+			children = (
+				044852FD1932F1F100A4E46C /* SevenSwitch.h */,
+				044852FE1932F1F100A4E46C /* SevenSwitch.m */,
+				049C0207193F154A00BC762E /* CustomSwitch.h */,
+				049C0208193F154A00BC762E /* CustomSwitch.m */,
+				049C0209193F154A00BC762E /* CustomSwitch.xib */,
+			);
+			name = Switch;
+			sourceTree = "<group>";
+		};
+		044C57A9194E9C0400CEE453 /* 橙色 */ = {
+			isa = PBXGroup;
+			children = (
+				044C57CC194EC1D500CEE453 /* 背景橙色.png */,
+				044C57CD194EC1D500CEE453 /* 背景橙色按下.png */,
+				044C57CE194EC1D500CEE453 /* 背景灰色小圆橙色.png */,
+				044C57CF194EC1D500CEE453 /* 电池两格橙色.png */,
+				044C57D0194EC1D500CEE453 /* 电池三格橙色.png */,
+				044C57D1194EC1D500CEE453 /* 电池一格橙色.png */,
+				044C57D2194EC1D500CEE453 /* 定位橙色.png */,
+				044C57D3194EC1D500CEE453 /* 喇叭橙色.png */,
+				0464C955194FDEC8004CAB5B /* 音量条橙色@2x.png */,
+				044C57D4194EC1D500CEE453 /* 蓝牙灰橙色.png */,
+				044C57D5194EC1D500CEE453 /* 蓝牙已连接橙色.png */,
+				044C57D6194EC1D500CEE453 /* 设置橙色.png */,
+				044C57D7194EC1D500CEE453 /* Far橙色@2x.png */,
+				044C57D8194EC1D500CEE453 /* Near橙色@2x.png */,
+				044C57D9194EC1D500CEE453 /* OFF灰橙色@2x.png */,
+				044C57DA194EC1D500CEE453 /* On橙色@2x.png */,
+			);
+			name = "橙色";
+			sourceTree = "<group>";
+		};
+		044C57EA194EC21200CEE453 /* 绿色 */ = {
+			isa = PBXGroup;
+			children = (
+				044C5805194EC27600CEE453 /* 背景灰色小圆绿色.png */,
+				044C5806194EC27600CEE453 /* 背景绿色.png */,
+				044C5807194EC27600CEE453 /* 背景绿色按下.png */,
+				044C5808194EC27600CEE453 /* 电池两格绿色.png */,
+				044C5809194EC27600CEE453 /* 电池三格绿色.png */,
+				044C580A194EC27600CEE453 /* 电池一格绿色.png */,
+				044C580B194EC27600CEE453 /* 喇叭绿色.png */,
+				0464C957194FDF36004CAB5B /* 音量条绿色@2x.png */,
+				044C580C194EC27600CEE453 /* 蓝牙灰绿色.png */,
+				044C580D194EC27600CEE453 /* 蓝牙已连接绿色.png */,
+				044C580E194EC27600CEE453 /* 设置绿色.png */,
+				044C580F194EC27600CEE453 /* Far绿色@2x.png */,
+				044C5810194EC27600CEE453 /* Near绿色@2x.png */,
+				044C5811194EC27600CEE453 /* OFF灰绿色@2x.png */,
+				044C5812194EC27600CEE453 /* On绿色@2x.png */,
+			);
+			name = "绿色";
+			sourceTree = "<group>";
+		};
+		044C5821194EC2A400CEE453 /* 紫色 */ = {
+			isa = PBXGroup;
+			children = (
+				044C5832194EF85E00CEE453 /* 背景灰色小圆紫色.png */,
+				044C5833194EF85E00CEE453 /* 背景紫色.png */,
+				044C5834194EF85E00CEE453 /* 背景紫色按下.png */,
+				044C5835194EF85E00CEE453 /* 电池两格紫色.png */,
+				044C5836194EF85E00CEE453 /* 电池三格紫色.png */,
+				044C5837194EF85E00CEE453 /* 电池一格紫色.png */,
+				044C5838194EF85E00CEE453 /* 喇叭紫色.png */,
+				0464C959194FDF7E004CAB5B /* 音量条紫色@2x.png */,
+				044C5839194EF85E00CEE453 /* 蓝牙灰紫色.png */,
+				04252A7C196A31CE006E4216 /* 蓝牙已连接紫色.png */,
+				044C583A194EF85E00CEE453 /* 设置紫色.png */,
+				044C583B194EF85E00CEE453 /* Far紫色@2x.png */,
+				044C583C194EF85E00CEE453 /* Near紫色@2x.png */,
+				044C583D194EF85E00CEE453 /* OFF灰紫色@2x.png */,
+				044C583E194EF85E00CEE453 /* On紫色@2x.png */,
+			);
+			name = "紫色";
+			sourceTree = "<group>";
+		};
+		044C5822194EC40C00CEE453 /* 切换背景四标 */ = {
+			isa = PBXGroup;
+			children = (
+				044C5823194EC42E00CEE453 /* 橙色图标@2x.png */,
+				044C5824194EC42E00CEE453 /* 橙色图标按下@2x.png */,
+				044C5825194EC42E00CEE453 /* 绿色图标@2x.png */,
+				044C5826194EC42E00CEE453 /* 绿色图标按下@2x.png */,
+				044C5827194EC42E00CEE453 /* 紫色图标@2x.png */,
+				044C5828194EC42E00CEE453 /* 紫色图标按下@2x.png */,
+				0464C951194FD9A6004CAB5B /* 蓝绿色图标@2x.png */,
+				0464C952194FD9A6004CAB5B /* 蓝绿色图标按下@2x.png */,
+			);
+			name = "切换背景四标";
+			sourceTree = "<group>";
+		};
+		044C582F194EC56600CEE453 /* 蓝绿色 */ = {
+			isa = PBXGroup;
+			children = (
+				045C55D2194A99A0007ECD90 /* 圆圈@2x.png */,
+				045C55D3194A99A0007ECD90 /* 喇叭蓝绿@2x.png */,
+				045C55D4194A99A0007ECD90 /* 音量条灰@2x.png */,
+				045C55D5194A99A0007ECD90 /* 音量条蓝@2x.png */,
+				046453E61945B97E00033CE3 /* 背景深灰.png */,
+				046453E71945B97E00033CE3 /* 背景外圈蓝绿.png */,
+				046453DE19456A9C00033CE3 /* mapLoc@2x.png */,
+				046453DC19456A9000033CE3 /* backImageViewSelected.png */,
+				046D92951942A54A00E0B439 /* 主动定位@2x.png */,
+				0421D2C819404D660047B3C0 /* 地图返回@2x.png */,
+				0421D2C21940453F0047B3C0 /* 镜头切换@2x.png */,
+				0421D2B6194041FF0047B3C0 /* 闪关灯开@2x.png */,
+				0421D2B7194041FF0047B3C0 /* 闪关灯关@2x.png */,
+				0421D2B9194041FF0047B3C0 /* 闪关灯自动@2x.png */,
+				0421D2A1194019300047B3C0 /* 拍照返回.png */,
+				0421D2A2194019300047B3C0 /* 拍照前.png */,
+				0421D2A3194019300047B3C0 /* 拍照时.png */,
+				0421D2A7194019300047B3C0 /* 摄像前@2x.png */,
+				0421D2A8194019300047B3C0 /* 摄像时@2x.png */,
+				046DD8431941687900AE82CC /* 摄像黑圆圈@2x.png */,
+				049C0222193F371000BC762E /* FIND.png */,
+				049C0223193F371000BC762E /* SILENCE.png */,
+				049C021A193F25F400BC762E /* FAR灰色80@2x.png */,
+				049C021B193F25F400BC762E /* NEAR蓝绿条80@2x.png */,
+				0421D2B419401F1B0047B3C0 /* 蓝绿FAR@2x.png */,
+				049C021E193F269300BC762E /* OFF灰@2x.png */,
+				049C021F193F269300BC762E /* ON蓝绿@2x.png */,
+				049C0201193F0FCD00BC762E /* NEAR蓝绿条@2x.png */,
+				049C020C193F18A400BC762E /* FAR灰色@2x.png */,
+				0421D2C419404B930047B3C0 /* 设置蓝绿.png */,
+				046C6D05193EEDDB00ECFB46 /* 电池灰.png */,
+				046C6D03193ED32100ECFB46 /* 电池.png */,
+				0421D2D219407D260047B3C0 /* 电池红.png */,
+				046C6CE6193EC8B500ECFB46 /* 电池蓝绿1格.png */,
+				046C6CE5193EC8B500ECFB46 /* 电池蓝绿2格.png */,
+				046C6D07193EEE1000ECFB46 /* 电池蓝绿3格.png */,
+				046C6CE7193EC8B500ECFB46 /* 红色.png */,
+				046C6CE8193EC8B500ECFB46 /* 灰圆心.png */,
+				046C6CE9193EC8B500ECFB46 /* 蓝色.png */,
+				046C6CEA193EC8B500ECFB46 /* 蓝牙灰.png */,
+				046C6CEB193EC8B500ECFB46 /* 蓝牙蓝绿.png */,
+				046C6CEC193EC8B500ECFB46 /* 锁.png */,
+				0421D2B219401CA10047B3C0 /* 摄像图标.png */,
+				046C6D01193ECF2300ECFB46 /* 摄像－白.png */,
+			);
+			name = "蓝绿色";
+			sourceTree = "<group>";
+		};
+		0464C97C19503833004CAB5B /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				0427205A198A647E0035A77F /* 默认图片.jpg */,
+				04272056198A609F0035A77F /* 默认.jpg */,
+				0458EF01196BD1CA00E8F797 /* 播放器上一首按下@2x.png */,
+				0458EF03196BD1CE00E8F797 /* 播放器下一首按下@2x.png */,
+				0458EEF7196BBEEB00E8F797 /* 播放器播放@2x.png */,
+				0458EEF8196BBEEB00E8F797 /* 播放器上一首@2x.png */,
+				0458EEF9196BBEEB00E8F797 /* 播放器下一首@2x.png */,
+				0458EEFA196BBEEB00E8F797 /* 播放器暂停@2x.png */,
+				04252A84196A3FA8006E4216 /* 梦莲湖.jpg */,
+				0464C97D19503876004CAB5B /* MusicViewController.h */,
+				0464C97E19503876004CAB5B /* MusicViewController.m */,
+			);
+			name = Music;
+			sourceTree = "<group>";
+		};
+		046C6CE4193EC87E00ECFB46 /* imageNew */ = {
+			isa = PBXGroup;
+			children = (
+				044C582F194EC56600CEE453 /* 蓝绿色 */,
+				044C5822194EC40C00CEE453 /* 切换背景四标 */,
+				044C5821194EC2A400CEE453 /* 紫色 */,
+				044C57EA194EC21200CEE453 /* 绿色 */,
+				044C57A9194E9C0400CEE453 /* 橙色 */,
+				046C6CED193EC8B500ECFB46 /* 相册.png */,
+				046C6CEE193EC8B500ECFB46 /* 相机.png */,
+				046C6CEF193EC8B500ECFB46 /* 音符.png */,
+				046C6CF0193EC8B500ECFB46 /* 圆心.png */,
+				046C6CF1193EC8B500ECFB46 /* 圆心蓝绿.png */,
+				046C6CFF193ECCC700ECFB46 /* 白色.png */,
+				04252A7E196A32F9006E4216 /* 喇叭黑灰色.png */,
+				04252A82196A34A0006E4216 /* 喇叭白色.png */,
+				04252A7F196A32F9006E4216 /* 音量条灰色@2x.png */,
+				04252A86196A5852006E4216 /* 喇叭深灰色.png */,
+				0458EEFF196BC0C200E8F797 /* 音量灰.png */,
+			);
+			name = imageNew;
+			sourceTree = "<group>";
+		};
+		04D3B8931929E12800449BA8 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				04D3B8941929E16100449BA8 /* WGS84TOGCJ02.h */,
+				04D3B8951929E16100449BA8 /* WGS84TOGCJ02.m */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +791,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = compx.com.cn;
 				TargetAttributes = {
+					0421015319124059007D4402 = {
+						DevelopmentTeam = 3RDATMGXX3;
+					};
 					0421016E1912405A007D4402 = {
 						TestTargetID = 0421015319124059007D4402;
 					};
@@ -202,6 +805,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 			);
 			mainGroup = 0421014B19124059007D4402;
 			productRefGroup = 0421015519124059007D4402 /* Products */;
@@ -219,8 +823,148 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046C6D06193EEDDB00ECFB46 /* 电池灰.png in Resources */,
+				0421D2AA194019300047B3C0 /* 拍照返回.png in Resources */,
+				046C6CF8193EC8B500ECFB46 /* 蓝牙蓝绿.png in Resources */,
+				0458EF02196BD1CA00E8F797 /* 播放器上一首按下@2x.png in Resources */,
+				044C581F194EC27600CEE453 /* OFF灰绿色@2x.png in Resources */,
+				046453DF19456A9C00033CE3 /* mapLoc@2x.png in Resources */,
 				042101621912405A007D4402 /* InfoPlist.strings in Resources */,
+				044C57DE194EC1D500CEE453 /* 电池两格橙色.png in Resources */,
+				0421D2BA194041FF0047B3C0 /* 闪关灯开@2x.png in Resources */,
+				046453E91945B97E00033CE3 /* 背景外圈蓝绿.png in Resources */,
+				046C6CFB193EC8B500ECFB46 /* 相机.png in Resources */,
+				0421D2B0194019300047B3C0 /* 摄像前@2x.png in Resources */,
+				044C57AF194EBD7E00CEE453 /* setImagePurple.plist in Resources */,
+				04417DB719D3A0F500784557 /* newLinkLossBack.caf in Resources */,
+				044C57DB194EC1D500CEE453 /* 背景橙色.png in Resources */,
+				044C57E7194EC1D500CEE453 /* Near橙色@2x.png in Resources */,
+				046C6CFE193EC8B500ECFB46 /* 圆心蓝绿.png in Resources */,
+				044C582A194EC42E00CEE453 /* 橙色图标按下@2x.png in Resources */,
+				049C0227193F3F1F00BC762E /* FindLK80.wav in Resources */,
+				044C5844194EF85E00CEE453 /* 电池一格紫色.png in Resources */,
+				0427205B198A647E0035A77F /* 默认图片.jpg in Resources */,
+				044C5842194EF85E00CEE453 /* 电池两格紫色.png in Resources */,
+				044C57AD194EBD4600CEE453 /* setImageGreen.plist in Resources */,
+				044C582D194EC42E00CEE453 /* 紫色图标@2x.png in Resources */,
+				0421D2BD194041FF0047B3C0 /* 闪关灯自动@2x.png in Resources */,
+				0458EEFD196BBEEB00E8F797 /* 播放器下一首@2x.png in Resources */,
+				046C6D00193ECCC700ECFB46 /* 白色.png in Resources */,
+				04272057198A609F0035A77F /* 默认.jpg in Resources */,
+				046C6CF5193EC8B500ECFB46 /* 灰圆心.png in Resources */,
+				0458EEFB196BBEEB00E8F797 /* 播放器播放@2x.png in Resources */,
+				04E6686B1946EF08003E077B /* Icon.png in Resources */,
+				0421D2D319407D260047B3C0 /* 电池红.png in Resources */,
+				044C582E194EC42E00CEE453 /* 紫色图标按下@2x.png in Resources */,
+				0421D2B1194019300047B3C0 /* 摄像时@2x.png in Resources */,
+				044C57E9194EC1D500CEE453 /* On橙色@2x.png in Resources */,
+				046C6CF7193EC8B500ECFB46 /* 蓝牙灰.png in Resources */,
 				0421016A1912405A007D4402 /* Images.xcassets in Resources */,
+				045C55D8194A99A0007ECD90 /* 音量条灰@2x.png in Resources */,
+				0421D2C519404B930047B3C0 /* 设置蓝绿.png in Resources */,
+				046C6D08193EEE1000ECFB46 /* 电池蓝绿3格.png in Resources */,
+				04366B8919147EC400EDC63E /* 间隔条.png in Resources */,
+				04252A80196A32F9006E4216 /* 喇叭黑灰色.png in Resources */,
+				044C5815194EC27600CEE453 /* 背景绿色按下.png in Resources */,
+				049C021C193F25F400BC762E /* FAR灰色80@2x.png in Resources */,
+				046DD8441941687900AE82CC /* 摄像黑圆圈@2x.png in Resources */,
+				046D92961942A54A00E0B439 /* 主动定位@2x.png in Resources */,
+				0458EF04196BD1CE00E8F797 /* 播放器下一首按下@2x.png in Resources */,
+				04717C45192EDC0A00A26B0A /* BEEP2.wav in Resources */,
+				047FE816192B379D00B1E25F /* alerm3.wav in Resources */,
+				044C5829194EC42E00CEE453 /* 橙色图标@2x.png in Resources */,
+				046C6D04193ED32100ECFB46 /* 电池.png in Resources */,
+				04717C4A192F137D00A26B0A /* find.wav in Resources */,
+				049C0225193F371000BC762E /* SILENCE.png in Resources */,
+				048961FB194978CD0089EAB5 /* Localizable.strings in Resources */,
+				049C0203193F0FCD00BC762E /* NEAR蓝绿条@2x.png in Resources */,
+				049C021D193F25F400BC762E /* NEAR蓝绿条80@2x.png in Resources */,
+				0421D2AC194019300047B3C0 /* 拍照时.png in Resources */,
+				042A5F9B19629ABC008D5F06 /* FindMusic.caf in Resources */,
+				044C5848194EF85E00CEE453 /* Far紫色@2x.png in Resources */,
+				046C6CFA193EC8B500ECFB46 /* 相册.png in Resources */,
+				045C55D9194A99A0007ECD90 /* 音量条蓝@2x.png in Resources */,
+				049C0220193F269300BC762E /* OFF灰@2x.png in Resources */,
+				049C0224193F371000BC762E /* FIND.png in Resources */,
+				046453E81945B97E00033CE3 /* 背景深灰.png in Resources */,
+				04252A81196A32F9006E4216 /* 音量条灰色@2x.png in Resources */,
+				044C584B194EF85E00CEE453 /* On紫色@2x.png in Resources */,
+				044C5847194EF85E00CEE453 /* 设置紫色.png in Resources */,
+				044C5819194EC27600CEE453 /* 喇叭绿色.png in Resources */,
+				044C5840194EF85E00CEE453 /* 背景紫色.png in Resources */,
+				049C0229193F3FB900BC762E /* LinkLossLK.wav in Resources */,
+				04252A7D196A31CE006E4216 /* 蓝牙已连接紫色.png in Resources */,
+				044C5846194EF85E00CEE453 /* 蓝牙灰紫色.png in Resources */,
+				044C583F194EF85E00CEE453 /* 背景灰色小圆紫色.png in Resources */,
+				0464C953194FD9A6004CAB5B /* 蓝绿色图标@2x.png in Resources */,
+				044C5831194EF06500CEE453 /* setImageDefault.plist in Resources */,
+				046C6D02193ECF2300ECFB46 /* 摄像－白.png in Resources */,
+				04252A87196A5852006E4216 /* 喇叭深灰色.png in Resources */,
+				044C5845194EF85E00CEE453 /* 喇叭紫色.png in Resources */,
+				042A5F9D1962A132008D5F06 /* FindLong.caf in Resources */,
+				049C020B193F154A00BC762E /* CustomSwitch.xib in Resources */,
+				04252A85196A3FA8006E4216 /* 梦莲湖.jpg in Resources */,
+				044C57E2194EC1D500CEE453 /* 喇叭橙色.png in Resources */,
+				046C6CF4193EC8B500ECFB46 /* 红色.png in Resources */,
+				0464C954194FD9A6004CAB5B /* 蓝绿色图标按下@2x.png in Resources */,
+				044C581C194EC27600CEE453 /* 设置绿色.png in Resources */,
+				046C6CF3193EC8B500ECFB46 /* 电池蓝绿1格.png in Resources */,
+				044C57DD194EC1D500CEE453 /* 背景灰色小圆橙色.png in Resources */,
+				043EEC8819D2D98F00E1AB42 /* LinkLossBack.caf in Resources */,
+				044C5816194EC27600CEE453 /* 电池两格绿色.png in Resources */,
+				0458EEFC196BBEEB00E8F797 /* 播放器上一首@2x.png in Resources */,
+				044C5813194EC27600CEE453 /* 背景灰色小圆绿色.png in Resources */,
+				044C57E4194EC1D500CEE453 /* 蓝牙已连接橙色.png in Resources */,
+				044C5843194EF85E00CEE453 /* 电池三格紫色.png in Resources */,
+				0421D2AB194019300047B3C0 /* 拍照前.png in Resources */,
+				044C584A194EF85E00CEE453 /* OFF灰紫色@2x.png in Resources */,
+				046453DD19456A9000033CE3 /* backImageViewSelected.png in Resources */,
+				0464C95A194FDF7E004CAB5B /* 音量条紫色@2x.png in Resources */,
+				046C6CF6193EC8B500ECFB46 /* 蓝色.png in Resources */,
+				0421D2B519401F1B0047B3C0 /* 蓝绿FAR@2x.png in Resources */,
+				044C581E194EC27600CEE453 /* Near绿色@2x.png in Resources */,
+				044C582C194EC42E00CEE453 /* 绿色图标按下@2x.png in Resources */,
+				044C582B194EC42E00CEE453 /* 绿色图标@2x.png in Resources */,
+				044C57E3194EC1D500CEE453 /* 蓝牙灰橙色.png in Resources */,
+				04717C4F192F25BC00A26B0A /* find1s.wav in Resources */,
+				0458EF00196BC0C200E8F797 /* 音量灰.png in Resources */,
+				046C6CFC193EC8B500ECFB46 /* 音符.png in Resources */,
+				044C581A194EC27600CEE453 /* 蓝牙灰绿色.png in Resources */,
+				044C57E5194EC1D500CEE453 /* 设置橙色.png in Resources */,
+				0421018A19124094007D4402 /* RootViewController.xib in Resources */,
+				044C5820194EC27600CEE453 /* On绿色@2x.png in Resources */,
+				044C581D194EC27600CEE453 /* Far绿色@2x.png in Resources */,
+				0448531F19335DDA00A4E46C /* Button27.wav in Resources */,
+				0458EEFE196BBEEB00E8F797 /* 播放器暂停@2x.png in Resources */,
+				045C55D6194A99A0007ECD90 /* 圆圈@2x.png in Resources */,
+				049C020D193F18A400BC762E /* FAR灰色@2x.png in Resources */,
+				0421D2B319401CA10047B3C0 /* 摄像图标.png in Resources */,
+				049C0221193F269300BC762E /* ON蓝绿@2x.png in Resources */,
+				0464C956194FDEC8004CAB5B /* 音量条橙色@2x.png in Resources */,
+				046C6CF9193EC8B500ECFB46 /* 锁.png in Resources */,
+				044C5818194EC27600CEE453 /* 电池一格绿色.png in Resources */,
+				044C5849194EF85E00CEE453 /* Near紫色@2x.png in Resources */,
+				0421D2C919404D660047B3C0 /* 地图返回@2x.png in Resources */,
+				044C57E1194EC1D500CEE453 /* 定位橙色.png in Resources */,
+				044C5814194EC27600CEE453 /* 背景绿色.png in Resources */,
+				044C57E8194EC1D500CEE453 /* OFF灰橙色@2x.png in Resources */,
+				044C57DC194EC1D500CEE453 /* 背景橙色按下.png in Resources */,
+				0421D2C31940453F0047B3C0 /* 镜头切换@2x.png in Resources */,
+				046C6CFD193EC8B500ECFB46 /* 圆心.png in Resources */,
+				04717C4B192F137D00A26B0A /* linkloss.wav in Resources */,
+				044C57E6194EC1D500CEE453 /* Far橙色@2x.png in Resources */,
+				044C57E0194EC1D500CEE453 /* 电池一格橙色.png in Resources */,
+				0421D2BB194041FF0047B3C0 /* 闪关灯关@2x.png in Resources */,
+				046C6CF2193EC8B500ECFB46 /* 电池蓝绿2格.png in Resources */,
+				044C5841194EF85E00CEE453 /* 背景紫色按下.png in Resources */,
+				044C581B194EC27600CEE453 /* 蓝牙已连接绿色.png in Resources */,
+				0474976819133B1300638598 /* SetViewController.xib in Resources */,
+				0464C958194FDF36004CAB5B /* 音量条绿色@2x.png in Resources */,
+				04252A83196A34A0006E4216 /* 喇叭白色.png in Resources */,
+				045C55D7194A99A0007ECD90 /* 喇叭蓝绿@2x.png in Resources */,
+				044C57DF194EC1D500CEE453 /* 电池三格橙色.png in Resources */,
+				044C5817194EC27600CEE453 /* 电池三格绿色.png in Resources */,
+				044C57AB194EA0AA00CEE453 /* setImageOragne.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +984,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				042101681912405A007D4402 /* AppDelegate.m in Sources */,
+				04A30690192DF7A1006347E9 /* BLEController.m in Sources */,
+				0474976719133B1300638598 /* SetViewController.m in Sources */,
+				041DC4091915CB70002DD53A /* MapViewController.m in Sources */,
+				049C020A193F154A00BC762E /* CustomSwitch.m in Sources */,
+				0440EEA81918CFB600B283DD /* NetUnity.m in Sources */,
 				042101641912405A007D4402 /* main.m in Sources */,
+				044852FF1932F1F100A4E46C /* SevenSwitch.m in Sources */,
+				0464C97F19503876004CAB5B /* MusicViewController.m in Sources */,
+				0421018919124094007D4402 /* RootViewController.m in Sources */,
+				04D3B8961929E16100449BA8 /* WGS84TOGCJ02.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +1020,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				042101611912405A007D4402 /* en */,
+				048961FF194978EC0089EAB5 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -275,8 +1029,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				0421017A1912405A007D4402 /* en */,
+				04896200194978EC0089EAB5 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		048961FD194978CD0089EAB5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				048961FC194978CD0089EAB5 /* en */,
+				048961FE194978EC0089EAB5 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -298,7 +1062,9 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xiaohui Wang (8FDCQ2E4NZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xiaohui Wang (8FDCQ2E4NZ)";
+				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -314,8 +1080,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "3670A50C-2CFE-4750-85DE-DB927CF71115";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -336,7 +1103,9 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xiaohui Wang (8FDCQ2E4NZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xiaohui Wang (8FDCQ2E4NZ)";
+				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -346,7 +1115,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "3670A50C-2CFE-4750-85DE-DB927CF71115";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -357,10 +1127,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xiaohui Wang (8FDCQ2E4NZ)";
+				COMPRESS_PNG_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "compxLostFind/compxLostFind-Prefix.pch";
 				INFOPLIST_FILE = "compxLostFind/compxLostFind-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3670A50C-2CFE-4750-85DE-DB927CF71115";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -370,10 +1145,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xiaohui Wang (8FDCQ2E4NZ)";
+				COMPRESS_PNG_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "compxLostFind/compxLostFind-Prefix.pch";
 				INFOPLIST_FILE = "compxLostFind/compxLostFind-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3670A50C-2CFE-4750-85DE-DB927CF71115";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -437,6 +1217,7 @@
 				042101821912405A007D4402 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		042101831912405A007D4402 /* Build configuration list for PBXNativeTarget "compxLostFindTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +1226,7 @@
 				042101851912405A007D4402 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

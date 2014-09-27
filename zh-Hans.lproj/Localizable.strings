@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  compxLostFind
+
+  Created by Compx on 14-6-12.
+  Copyright (c) 2014年 compx.com.cn. All rights reserved.
+*/
+
+
+"Loss-Proof"="防丢/寻物";
+"Range"="报警距离";
+"Outoff-Range"="超距报警";
+"Locator"="寻物";
+"Map-Location"="地图定位";
+
+"No-Location"="没有定位过，请先定位再来查看地图!";
+"OK"="确定";
+"Your-position-location"="你的定位!";
+"No-network"="没有网络，无法定位!";
+"Please-trun-on-Map-location"="请先到App设置页面打开地图定位功能！";
+
+"MusicBack"="返回";
+"MusicAddSong"="添加";
+"MusicNoSong"="你的音乐库里没有音乐，请先添加！";

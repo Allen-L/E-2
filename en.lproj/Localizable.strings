@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  compxLostFind
+
+  Created by Compx on 14-6-12.
+  Copyright (c) 2014年 compx.com.cn. All rights reserved.
+*/
+
+"Loss-Proof"="Loss-proof";
+"Range"="Range";
+"Outoff-Range"="Out Of-Range";
+"Locator"="Locator";
+"Map-Location"="Map-Location";
+
+
+"No-Location"="No position is positioned over, first locate and then to see the map!";
+"OK"="OK";
+"Your-position-location"="Your position location!";
+"No-network"="No network, unable to locate!";
+"Please-trun-on-Map-location"="Please go to the App settings screen To trun on Map-location!";
+
+
+"MusicBack"="Back";
+"MusicAddSong"="Add";
+
+"MusicNoSong"="Your Music Albums No Song! Please Add First!";
